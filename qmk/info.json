@@ -1,0 +1,11 @@
+{
+    "manufacturer": "sepp",
+    "url": "https://github.com/sebastian-stumpf/narfkb",
+    "maintainer": "sebastian-stumpf",
+    "keyboard_name": "narfkb",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x1234",
+        "device_version": "1.0.0"
+    }
+}
