@@ -1,14 +1,32 @@
-#pragma once
+/*
+MIT License
+Copyright (c) 2023 Sebastian Stumpf
 
-#define DIODE_DIRECTION COL2ROW
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 8
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. 
+*/
+
+#pragma once
 
 #define SPLIT_USB_DETECT
 #define USE_SERIAL
 
-// If you don't want to use full duplex you can specify GP12/GP13 below and use the remaining
-// pin for somehting else
+// If you don't want to use full duplex, you can specify GP12/GP13 below and use the remaining pin for something else
 // #define SOFT_SERIAL_PIN GP13
 // #define SERIAL_PIO_USE_PIO1
 
@@ -16,12 +34,6 @@
 #define SERIAL_USART_TX_PIN GP12
 #define SERIAL_USART_RX_PIN GP13
 #define SERIAL_USART_PIN_SWAP
-
-#define MATRIX_ROW_PINS { GP3, GP4, GP5, GP6 }
-#define MATRIX_COL_PINS { GP15, GP26, GP27, GP28, GP29, GP11, GP10, GP9 }
-
-#define ENCODERS_PAD_A { GP14 }
-#define ENCODERS_PAD_B { GP8 }
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
